@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+
+
+node.js:
+  image: node.js:19.8.1
+  ports: 
+    - "30000-32767"
+  volumes:
+    - ./app:/app
+  environment:
+   - NODE.JS_UNBUFFERED=1
+
